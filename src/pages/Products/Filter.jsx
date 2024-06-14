@@ -4,6 +4,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
+import PriceSlider from "./PriceSlider"
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -54,6 +55,12 @@ const filters = [
       { value: '20l', label: '20L', checked: false },
       { value: '40l', label: '40L', checked: true },
     ],
+  },
+  {
+    id: 'price',
+    name: 'Price',
+    // component: <PriceSlider></PriceSlider>,  // Replace this line with the PriceSlider component
+    options: []
   },
 ]
 
