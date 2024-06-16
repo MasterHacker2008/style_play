@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Signup from './components/Signup/Login'
+import Login from './components/Authentication/Login'
+import Register from './components/Authentication/Register'
 import Product from "./pages/Product/Product"
 import Products from "./pages/Products/Products"
 import Home from "./pages/Home/Home"
@@ -41,8 +42,12 @@ const router = createBrowserRouter([
         element: <Product></Product>,
       },
       {
-        path: "/signup",
-        element: <Signup></Signup>,
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
       {
         path: "/cart",
