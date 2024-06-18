@@ -5,8 +5,10 @@ import Login from './components/Authentication/Login'
 import Register from './components/Authentication/Register'
 import Product from "./pages/Product/Product"
 import Products from "./pages/Products/Products"
-import Home from "./pages/Home/Home"
 import Cart from "./Cart"
+import CarouselSlider from "./pages/Home/HeroSection"
+import "./pages/Home/slider.css"
+import SuccessButton from './components/Button/Success'
 
 import {
   createBrowserRouter,
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <CarouselSlider></CarouselSlider>
       },
       {
         path: "/products/:id",
@@ -52,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart></Cart>,
+      },
+      {
+        path: "/button",
+        element: <SuccessButton></SuccessButton>,
       },
     ]
   },

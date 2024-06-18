@@ -1,10 +1,8 @@
 import React from 'react'
-
+import CarouselSlider from './HeroSection'
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <CarouselSlider></CarouselSlider>
   )
 }
 
